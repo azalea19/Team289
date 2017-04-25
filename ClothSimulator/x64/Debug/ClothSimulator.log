@@ -1,0 +1,7 @@
+﻿  main.cpp
+d:\userfiles\desktop\team289\clothsimulator\main.cpp(78): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+d:\userfiles\desktop\team289\clothsimulator\main.cpp(78): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+d:\userfiles\desktop\team289\clothsimulator\main.cpp(79): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+d:\userfiles\desktop\team289\clothsimulator\main.cpp(79): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+  ClothSimulator.vcxproj -> D:\UserFiles\Desktop\Team289\x64\Debug\ClothSimulator.exe
+  ClothSimulator.vcxproj -> D:\UserFiles\Desktop\Team289\x64\Debug\ClothSimulator.pdb (Full PDB)

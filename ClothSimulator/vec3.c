@@ -6,7 +6,6 @@
 
 void vec3_Init(vec3* const vector)
 {
-
 	vector->x = 0;
 	vector->y = 0;
 	vector->z = 0;
@@ -124,14 +123,13 @@ float vec3_Magnitude(vec3 vector)
 vec3 vec3_Normalise(vec3 vector)
 {
 
-	vec3 normalised;
-	float magnitude = vec3_Magnitude(vector);
+	/*float magnitude = vec3_Magnitude(vector);
 
 	normalised.x /= magnitude;
 	normalised.y /= magnitude;
 	normalised.z /= magnitude;
 
-	return normalised;
+	return normalised;*/
 
 } // End of vec3_Normalise()
 
