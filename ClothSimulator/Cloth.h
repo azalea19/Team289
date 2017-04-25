@@ -21,7 +21,6 @@ typedef struct Cloth
 
 void cloth_Init(Cloth* const cloth, int width, int height, int a_numParticlesX, int a_numParticlesY)
 {
-
 }
 
 void cloth_Create(Cloth* const cloth)
@@ -40,4 +39,3 @@ void cloth_AddConstraints(Cloth* cloth)
 }
 
 #endif // Cloth_h__
-
