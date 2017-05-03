@@ -21,6 +21,9 @@
     <ClCompile Include="vec3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Particle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

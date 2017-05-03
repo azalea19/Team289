@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Particle.c" />
     <ClCompile Include="vec3.c" />
   </ItemGroup>
   <ItemGroup>
