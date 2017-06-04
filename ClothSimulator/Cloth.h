@@ -5,6 +5,7 @@
 #include "Constraint.h"
 #include <stdlib.h>
 #include "Input.h"
+#include "Ball.h"
 
 
 /*******************************************************************************************************************************
@@ -16,7 +17,7 @@
 *
 *******************************************************************************************************************************/
 
-#define CONSTRAINT_ITERATIONS 15
+
 
 
 extern int CLOTH_BANNER;
@@ -57,11 +58,11 @@ void cloth_AddWindForceOnTriangle(Particle* p1, Particle* p2, Particle* p3, vec3
 
 void cloth_DrawTriangle(Particle const*  p1, Particle const* p2, Particle const* p3, vec3 color);
 
-void cloth_DrawShaded(Cloth* cloth, int lighting);
+void cloth_DrawShaded(Cloth* cloth, int lighting, vec3 color);
 
-void cloth_BallCollision(Cloth* cloth, vec3 center, float radius);
+void cloth_BallCollision(Cloth* cloth, Ball* ballList, int* ballCount);
 
-void cloth_TimeStep(Cloth* cloth, vec3 ballPos, float ballRadius);
+void cloth_TimeStep(Cloth* cloth, Ball* ballLists, int* ballCount, int constraintIterations);
 
 void cloth_AddForce(Cloth* cloth, vec3 direction);
 
