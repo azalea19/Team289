@@ -1,3 +1,10 @@
-﻿  vec3.cpp
+﻿  main.cpp
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(93): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(94): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(98): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(100): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\kmaxfield\desktop\team289\clothsimulator\main.cpp(103): warning C4305: 'argument': truncation from 'double' to 'float'
   ClothSimulator.vcxproj -> C:\Users\kmaxfield\Desktop\Team289\x64\Debug\ClothSimulator.exe
   ClothSimulator.vcxproj -> C:\Users\kmaxfield\Desktop\Team289\x64\Debug\ClothSimulator.pdb (Full PDB)

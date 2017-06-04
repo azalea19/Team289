@@ -1,17 +1,7 @@
-﻿  glui.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(599): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(602): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(1922): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(1925): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-  Generating Code...
-  Compiling...
-  viewmodel.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+﻿  viewmodel.cpp
+  quaternion.cpp
   glui_window.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_treepanel.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(211): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(212): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(213): warning C4305: 'argument': truncation from 'double' to 'float'
@@ -20,9 +10,7 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(215): warning 
 c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(216): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_treepanel.cpp(217): warning C4305: 'argument': truncation from 'double' to 'float'
   glui_tree.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_translation.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(200): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(345): warning C4305: 'initializing': truncation from 'double' to 'float'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(352): warning C4305: 'argument': truncation from 'double' to 'float'
@@ -38,7 +26,6 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(466): warnin
 c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(467): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_translation.cpp(468): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_textbox.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(349): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(432): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(443): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
@@ -55,19 +42,14 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(1051): warning C
 c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(1073): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 9 has type 'unsigned __int64'
   c:\users\kmaxfield\desktop\team289\glui\source\glui_textbox.cpp(1073): note: consider using '%zd' in the format string
   glui_string.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_string.cpp(48): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1396): note: see declaration of '_vsnprintf'
   glui_statictext.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_spinner.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_spinner.cpp(153): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_spinner.cpp(155): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   glui_separator.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_scrollbar.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(368): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(373): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(397): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
@@ -79,7 +61,6 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(776): warning 
 c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(815): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_scrollbar.cpp(816): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   glui_rotation.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(120): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(136): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(143): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
@@ -89,16 +70,11 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(154): warning C
 c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(310): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_rotation.cpp(411): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   glui_rollout.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_radio.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_radio.cpp(95): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
   glui_panel.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_node.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_mouse_iaction.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(161): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(164): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(166): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
@@ -106,41 +82,62 @@ c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(168): warn
 c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(197): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_mouse_iaction.cpp(198): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_listbox.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_listbox.cpp(113): warning C4305: 'argument': truncation from 'double' to 'float'
   glui_list.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_list.cpp(105): warning C4244: '=': conversion from 'time_t' to 'unsigned long', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_list.cpp(238): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_list.cpp(275): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-  glui_filebrowser.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\kmaxfield\desktop\team289\glui\source\glui_filebrowser.cpp(119): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   Compiling...
+  glui_filebrowser.cpp
+c:\users\kmaxfield\desktop\team289\glui\source\glui_filebrowser.cpp(119): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   glui_edittext.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_edittext.cpp(492): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_edittext.cpp(1142): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
 c:\users\kmaxfield\desktop\team289\glui\source\glui_edittext.cpp(1163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
   glui_control.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_control.cpp(215): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\kmaxfield\desktop\team289\glui\source\glui_control.cpp(904): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
   glui_commandline.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_column.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_checkbox.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_button.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  glui_bitmap_img_data.cpp
   glui_bitmaps.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   glui_add_controls.cpp
-c:\users\kmaxfield\desktop\team289\glui\include\gl\glui.h(880): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  glui.cpp
+c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(599): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(602): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(1922): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\kmaxfield\desktop\team289\glui\source\glui.cpp(1925): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  arcball.cpp
+  algebra3.cpp
+  Generating Code...
+  glui_img_uparrow.c
+  glui_img_spinup_dis.c
+  glui_img_spinup_1.c
+  glui_img_spinup_0.c
+  glui_img_spindown_dis.c
+  glui_img_spindown_1.c
+  glui_img_spindown_0.c
+  glui_img_rightarrow.c
+  glui_img_radiobutton_1_dis.c
+  glui_img_radiobutton_1.c
+  glui_img_radiobutton_0_dis.c
+  glui_img_radiobutton_0.c
+  glui_img_listbox_up_dis.c
+  glui_img_listbox_up.c
+  glui_img_listbox_down.c
+  glui_img_leftarrow.c
+  glui_img_downarrow.c
+  glui_img_checkbox_1_dis.c
+  glui_img_checkbox_1.c
+  glui_img_checkbox_0_dis.c
+  Generating Code...
+  Compiling...
+  glui_img_checkbox_0.c
   Generating Code...
   GLUI.vcxproj -> C:\Users\kmaxfield\Desktop\Team289\x64\Debug\glui32.lib

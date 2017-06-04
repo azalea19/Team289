@@ -1,15 +1,13 @@
 #include "Input.h"
 #include "Ball.h"
+#include "Texture.h"
 
 float lastX;
 float lastY;
 
+int exiting = 0;
+
 vec3 translation;
-
-void MouseMotion(int x, int y)
-{
-
-}
 
 void keyboard(unsigned char key, int x, int y)
 {
@@ -17,7 +15,14 @@ void keyboard(unsigned char key, int x, int y)
   {
     //Exit when the escape key is pressed.
   case 27:
-    exit(0);
+    if (exiting == 0)
+    {
+      exiting = 1;
+    }
+    else if(exiting == 1)
+    {
+      //exit(0);
+    }    
     break;
   default:
     break;

@@ -7,6 +7,7 @@
 #include "Input.h"
 #include "GL/glui.h"
 #include "Ball.h"
+#include "Texture.h"
 
 //See documentation on how to use: https://www.cs.unc.edu/~rademach/glui/src/release/glui_manual_v2_beta.pdf
 //GLUI setup
@@ -55,7 +56,7 @@ vec3 ballstart = { 45,30,80 };
 
 extern vec3 translation;
 extern int left_mouse_btn_down;
-
+extern int exiting;
 
 
 void ModifyCloth()
@@ -234,51 +235,111 @@ void InitSimulation()
   ModifyCloth();
 }
 
+
+void DrawSplashScreen(char* filename)
+{
+  static GLuint textureID = texture_LoadBMP(filename);
+  glui->hide();
+
+  int vp[4];
+  glGetIntegerv(GL_VIEWPORT, vp);
+
+  //turn off culling so clockwise/anticlockwise order of point does not matter.
+  glDisable(GL_CULL_FACE);
+  glDisable(GL_LIGHTING);
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, textureID);
+
+
+
+  glPushMatrix();
+  glLoadIdentity();
+
+  glMatrixMode(GL_PROJECTION);
+  glPushMatrix();
+  glLoadIdentity();
+
+  glBegin(GL_QUADS);
+
+  //Top left corner
+  glTexCoord2f(0, 1);
+  glVertex3f(-1, 1, 0);
+
+  //Top right corner
+  glTexCoord2f(1, 1);
+  glVertex3f(1, 1, 0);
+
+  //Bottom right corner
+  glTexCoord2f(1, 0);
+  glVertex3f(1, -1, 0);
+
+  //Bottom left corner
+  glTexCoord2f(0,0);
+  glVertex3f(-1, -1, 0);
+
+  glEnd();
+
+  glDisable(GL_TEXTURE_2D);
+
+  glEnable(GL_LIGHTING);
+
+  glPopMatrix();
+
+  glMatrixMode(GL_MODELVIEW);
+  glPopMatrix();
+}
+
+
 void display(void)
 {
 
-  glui->show();
   //Clears the color and depth buffer
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
   glMatrixMode(GL_MODELVIEW);
 
-  //Loading the identity matrix is a way to initialize your matrix to the right state 
-  //before you multiply further matrices into the matrix stack
-  glLoadIdentity();
-
-  //If enabled, use the current lighting parameters to
-  //compute the vertex color.
-  //Otherwise, simply associate the current color with each vertex
-  glEnable(GL_LIGHTING);
-
-  glTranslatef(startPos.x, startPos.y, startPos.z);
-
-  ball_time++;
-  ball_pos.z = (float)cos(ball_time / 50.0) * 60;
-  ball_pos.x = (float)sin(ball_time / 50.0) * 20 + 50;
-
-  vec3 direction = { 0,gravity,0.f };
-  vec3 windForce = { windX,windY,windZ };
-
-  cloth_AddForce(cloth, direction);
-  cloth_WindForce(cloth, windForce);
-  cloth_TimeStep(cloth, balls, &ballCount, constraintIterations);
-
-  ball_UpdateBalls(balls, &ballCount);
-
-  for (int i = 0; i < ballCount; i++)
+  if (exiting < 1)
   {
-    glPushMatrix(); // to draw the ball we use glutSolidSphere, and need to draw the sphere at the position of the ball
-    glTranslatef(balls[i].position.x, balls[i].position.y, balls[i].position.z); // hence the translation of the sphere onto the ball position
-    glColor3f(0.4f, 0.8f, 0.5f);
-    glutSolidSphere(ball_radius - 0.1, 50, 50); // draw the ball, but with a slightly lower radius, otherwise we could get ugly visual artifacts of cloth penetrating the ball slightly
-    glPopMatrix();
+    //Loading the identity matrix is a way to initialize your matrix to the right state 
+    //before you multiply further matrices into the matrix stack
+    glLoadIdentity();
+
+    //If enabled, use the current lighting parameters to
+    //compute the vertex color.
+    //Otherwise, simply associate the current color with each vertex
+    glEnable(GL_LIGHTING);
+
+    glTranslatef(startPos.x, startPos.y, startPos.z);
+
+    ball_time++;
+    ball_pos.z = (float)cos(ball_time / 50.0) * 60;
+    ball_pos.x = (float)sin(ball_time / 50.0) * 20 + 50;
+
+    vec3 direction = { 0,gravity,0.f };
+    vec3 windForce = { windX,windY,windZ };
+
+    cloth_AddForce(cloth, direction);
+    cloth_WindForce(cloth, windForce);
+    cloth_TimeStep(cloth, balls, &ballCount, constraintIterations);
+
+    ball_UpdateBalls(balls, &ballCount);
+
+    for (int i = 0; i < ballCount; i++)
+    {
+      glPushMatrix(); // to draw the ball we use glutSolidSphere, and need to draw the sphere at the position of the ball
+      glTranslatef(balls[i].position.x, balls[i].position.y, balls[i].position.z); // hence the translation of the sphere onto the ball position
+      glColor3f(0.4f, 0.8f, 0.5f);
+      glutSolidSphere(ball_radius - 0.1, 50, 50); // draw the ball, but with a slightly lower radius, otherwise we could get ugly visual artifacts of cloth penetrating the ball slightly
+      glPopMatrix();
+    }
+
+
+    cloth_DrawShaded(cloth, lighting, color);
+  }
+  else
+  {
+    DrawSplashScreen("faces.bmp");
   }
  
-
-  cloth_DrawShaded(cloth, lighting, color);
-
   //glutSwapBuffers swaps the buffers of the current window if double buffered
   glutSwapBuffers();
   //glutPostRedisplay marks the current window as needing to be redisplayed
@@ -355,7 +416,6 @@ int main(int argc, char** argv)
   GLUI_Master.set_glutReshapeFunc(reshape);
 
   glutDisplayFunc(display);
-  glutMotionFunc(MouseMotion);
 
   GLUI_Master.set_glutIdleFunc(NULL);
   glutMainLoop();

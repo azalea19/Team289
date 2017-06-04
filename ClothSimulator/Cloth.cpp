@@ -220,19 +220,18 @@ void cloth_DrawTriangle(Particle const* p1, Particle const* p2, Particle const* 
 
 void cloth_DrawShaded(Cloth* cloth, int lighting, vec3 color)
 {
-  //Reset normals
-  for (int y = 0; y < cloth->numParticlesY; y++)
-  {
-    for (int x = 0; x < cloth->numParticlesX; x++)
-    {
-      cloth_GetParticle(cloth, x, y)->accumulated_normal.x = 0;
-      cloth_GetParticle(cloth, x, y)->accumulated_normal.y = 0;
-      cloth_GetParticle(cloth, x, y)->accumulated_normal.z = 0;
-    }
-  }
-
   if (lighting == 1)
   {
+    //Reset normals
+    for (int y = 0; y < cloth->numParticlesY; y++)
+    {
+      for (int x = 0; x < cloth->numParticlesX; x++)
+      {
+        cloth_GetParticle(cloth, x, y)->accumulated_normal.x = 0;
+        cloth_GetParticle(cloth, x, y)->accumulated_normal.y = 0;
+        cloth_GetParticle(cloth, x, y)->accumulated_normal.z = 0;
+      }
+    }
     //Create smooth per particle normals by adding up all the (hard) triangle normals that each particle is part of
     for (int x = 0; x < cloth->numParticlesX - 1; x++)
     {
@@ -249,7 +248,13 @@ void cloth_DrawShaded(Cloth* cloth, int lighting, vec3 color)
         cloth_GetParticle(cloth, x, y + 1)->accumulated_normal = vec3_Add(cloth_GetParticle(cloth, x, y + 1)->accumulated_normal, vec3_Normalize(normal));
       }
     }
+    glEnable(GL_LIGHTING);
   }
+  else
+  {
+    glDisable(GL_LIGHTING);
+  }
+
 
   glBegin(GL_TRIANGLES);
   for (int x = 0; x < cloth->numParticlesX - 1; x++)

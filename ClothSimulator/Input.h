@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "vec3.h"
+#include "gl/glew.h"
 #include <GL/freeglut.h>
 #include <GL/glut.h> 
 
@@ -17,8 +18,6 @@
 *
 *******************************************************************************************************************************/
 
-
-void MouseMotion(int x, int y);
 
 void keyboard(unsigned char key, int x, int y);
 
