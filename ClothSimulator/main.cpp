@@ -8,6 +8,7 @@
 #include "GL/glui.h"
 #include "Ball.h"
 
+//See documentation on how to use: https://www.cs.unc.edu/~rademach/glui/src/release/glui_manual_v2_beta.pdf
 //GLUI setup
 GLUI *glui;
 GLUI_Spinner* xSpinner;
@@ -158,7 +159,6 @@ void ClothColorEvent(GLUI_Control* control)
     break;
   }
 }
-
 
 void InitUI()
 {

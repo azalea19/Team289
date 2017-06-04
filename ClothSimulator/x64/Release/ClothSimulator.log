@@ -7,9 +7,9 @@ main.cpp(97): warning C4244: '=': conversion from 'double' to 'float', possible 
 main.cpp(98): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 main.cpp(101): warning C4305: 'argument': truncation from 'double' to 'float'
   Generating code
-  49 of 468 functions (10.5%) were compiled, the rest were copied from previous compilation.
+  55 of 468 functions (11.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    28 functions had inline decision re-evaluated but remain unchanged
+    26 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ClothSimulator.vcxproj -> C:\Users\kmaxfield\Desktop\Team289\x64\Release\ClothSimulator.exe
   ClothSimulator.vcxproj -> C:\Users\kmaxfield\Desktop\Team289\x64\Release\ClothSimulator.pdb (Full PDB)
