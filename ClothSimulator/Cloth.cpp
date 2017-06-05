@@ -298,7 +298,7 @@ void cloth_TimeStep(Cloth* cloth, Ball* ballList, int* ballCount, int constraint
   {
     for (int x = 0; x < cloth->numParticlesX; x++)
     {
-      particle_TimeStep(cloth_GetParticle(cloth, x, y), 0.016f, 0.016f, 0.1f);
+      particle_TimeStep(cloth_GetParticle(cloth, x, y), 0.1f);
     }
   }
 }

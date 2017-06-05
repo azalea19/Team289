@@ -35,23 +35,17 @@ void particle_AddForce(Particle* const a_particle, vec3 a_vector)
 }
 
 
-void particle_TimeStep(Particle* const a_particle, float dt, float last_dt, float damping)
+void particle_TimeStep(Particle* const a_particle, float damping)
 {
   if (a_particle->moveable)
   {
     vec3 temp = a_particle->pos;
 
     vec3 sourceVelocity = vec3_Subtract(a_particle->pos, a_particle->old_pos);
-    float frameRatio = (dt / last_dt);
-    vec3 normalisedVelocity = vec3_Multiply(sourceVelocity, frameRatio);
 
-    vec3 dampedVelocity = vec3_Multiply(normalisedVelocity, 1 - damping);
+    vec3 dampedVelocity = vec3_Multiply(sourceVelocity, 1 - damping);
     vec3 ATSquared = vec3_Multiply(a_particle->acceleration, TIME_STEP2);
 
-    if (dampedVelocity.x != 0 || dampedVelocity.y != 0 || dampedVelocity.z != 0)
-    {
-      dampedVelocity = dampedVelocity;
-    }
     vec3 finalPos = vec3_Add(a_particle->pos, dampedVelocity);
     finalPos = vec3_Add(finalPos, ATSquared);
 

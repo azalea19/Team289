@@ -19,8 +19,19 @@
 *******************************************************************************************************************************/
 
 
+/**
+*@brief The keyboard input function to pass to GLUT.
+*@para unsigned char key, int x, int y
+*@return void
+*/
 void keyboard(unsigned char key, int x, int y);
 
+
+/**
+*@brief The keyboard input function to pass to GLUT that handles resizing the window.
+*@para int a_keys, int x, int y
+*@return void
+*/
 void arrow_keys(int a_keys, int x, int y);
 
 #endif // Input_h__
